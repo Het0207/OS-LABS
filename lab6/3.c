@@ -1,4 +1,3 @@
-3)Bidirectional pipeline : File name passed from parent to child and file content passed from child to parent
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>

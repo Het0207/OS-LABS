@@ -20,12 +20,11 @@ int main()
 
         int p = fork();
 
-        if (p > 0)
+        if (p == 0)
         {
 
             close(pipefd[0]);
             write(pipefd[1], c, sizeof(c));
-            wait(NULL);
         }
 
         else
@@ -33,8 +32,11 @@ int main()
 
             close(pipefd[1]);
             read(pipefd[0], buff, sizeof(buff));
+            printf("%s", buff);
+
+            wait(NULL);
+
         }
     }
 
-    printf("%s", buff);
 }

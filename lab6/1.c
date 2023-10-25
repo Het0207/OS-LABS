@@ -16,6 +16,6 @@ else{
 printf("%d %d ",pipefd[0],pipefd[1]);
 }
 
-printf("%d %s",sc,c[0]);
+// printf("%d %s",sc,c[0]);
 }
 

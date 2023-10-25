@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void implement_ls_r( DIR * dp,char *c){
+void implement_ls_r( DIR * dp.char *c){
 
   struct dirent *d;
 
@@ -25,12 +25,5 @@ if(d->d_type == DT_DIR){
   return;
 }
 
-
-int main(){
-char buf[100]={""};
-  DIR * dp;
- char *c= getcwd(buf,sizeof(buf));
- dp=opendir(c);
- implement_ls_r(dp,c);
- return 0;
 }
+
